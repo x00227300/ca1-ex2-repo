@@ -1,0 +1,36 @@
+git init
+echo "todo.txt" > .gitignore
+git add app.py
+git commit -m "First commit"
+git status
+git add .gitignore
+git add debug.log
+git commit -m "Actual first commit"
+git statusd
+git status
+git branch -m master main
+git checkout -b feature-login
+git add app.py
+git commit -m "second branch first commit"
+git switch main
+git add app.py
+git commit -m "i think i bugged first commit"
+git status
+git switch feature-login
+git add app.py
+git commit -m "i think i bugged first commit part2
+"
+git add app.py
+git switch main
+git add app.py
+git commit -m "Second main commit"
+git checkout main
+git merge feature-login
+git add app.py
+git commit -m "conflict resolution"
+git merge feature-login
+git remote add origin https://github.com/x00227300/ca1-ex2-repo
+git push
+git push -u origin main
+git pull origin main README.md
+git pull origin main
